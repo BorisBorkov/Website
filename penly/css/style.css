@@ -1,0 +1,210 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4aa3a3;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('../images/background-img.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    background-color: #4aa3a3;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.hero .cta.secondary {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.hero .cta:hover {
+    background-color: #3a8282;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.benefit-cards .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    width: calc(33% - 60px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-cards .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.testimonial {
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Navigation Arrows */
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.arrow:hover {
+    color: #4aa3a3;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
