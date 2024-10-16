@@ -8,7 +8,7 @@ function showTestimonial(index) {
 
     // Hide all testimonials
     testimonials.forEach(testimonial => {
-        testimonial.style.transform = `translateX(-${index * 100}%)`;
+        testimonial.style.transform = `translateX(-${index * 102.4}%)`; // Default 100
     });
 }
 
@@ -27,6 +27,19 @@ function previousTestimonial() {
 // Event listeners for carousel buttons
 document.querySelector('.arrow.right').addEventListener('click', nextTestimonial);
 document.querySelector('.arrow.left').addEventListener('click', previousTestimonial);
+
+// Deprecated
+// const cards = document.querySelectorAll('.card');
+
+// cards.forEach(card => {
+//     card.addEventListener('mouseover', () => {
+//         card.classList.add('hover');
+//     });
+
+//     card.addEventListener('mouseout', () => {
+//         card.classList.remove('hover');
+//     });
+// });
 
 // Initial display
 showTestimonial(currentIndex);
