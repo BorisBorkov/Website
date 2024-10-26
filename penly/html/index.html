@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#about">Services</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -195,22 +195,22 @@
                     <p>"Penly’s technical writing services were invaluable for our recent product launch. They nailed it every time!"</p>
                 </div>
             </div>
-
             <button class="arrow right">&#10095;</button>
-
         </div>
+        <div class="dots-container"></div>
     </section>
-
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <form id="contact-form" action="submit.php" method="post">
+        <form id="contact-form" action="#home" method="post" onsubmit="return handleSubmit(event);">
             <input type="text" name="first-name" placeholder="First Name" required>
             <input type="text" name="last-name" placeholder="Last Name" required>
             <input type="email" name="email" placeholder="Email" required>
             <input type="tel" name="phone" placeholder="Phone" required>
-            <button type="submit" class="cta">Submit</button>
+            <button type="submit" class="cta-2">Submit</button>
         </form>
+        <div class="notification" id="notification" style="display: none;">Contact form sent</div>
     </section>
+    
 
     <footer>
         <div class="footer-content">

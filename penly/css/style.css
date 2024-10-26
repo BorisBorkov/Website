@@ -30,10 +30,12 @@ header {
 header nav ul {
     display: flex;
     list-style: none;
+    margin-right: 50px;
+
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 header nav ul li a {
@@ -67,8 +69,11 @@ header nav ul li a:hover {
 .hero p {
     font-size: 1.8rem;
     margin-bottom: 30px;
-    color: #1f1f1f;
+    color: #000000;
     font-weight: 900;
+    background-color: rgba(134, 134, 134, 0.7);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .hero .cta {
@@ -90,6 +95,13 @@ header nav ul li a:hover {
 
 .hero .cta:hover {
     background-color: #3a8282;
+}
+
+button.cta-2 {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: 40vh;
 }
 
 h2 {
@@ -203,6 +215,26 @@ h2 {
     transition: color 0.3s;
 }
 
+/* Carousel Dots */
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
 /* Contact Section */
 .contact {
     padding: 60px 20px;
@@ -237,4 +269,16 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.notification {
+    display: none;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 5px;
 }
