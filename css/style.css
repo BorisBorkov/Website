@@ -30,10 +30,12 @@ header {
 header nav ul {
     display: flex;
     list-style: none;
+    margin-right: 50px;
+
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 header nav ul li a {
@@ -69,6 +71,9 @@ header nav ul li a:hover {
     margin-bottom: 30px;
     color: #000000;
     font-weight: 900;
+    background-color: rgba(134, 134, 134, 0.7);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .hero .cta {
@@ -93,11 +98,21 @@ header nav ul li a:hover {
 }
 
 button.cta-2 {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 4px;
-    padding: 4px;
-    margin-left: 40vh;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 0.8rem;
+    margin-left: 85%;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: transform 0.3s, background-color 0.3s;
 }
+
+button.cta-2:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
 
 h2 {
     font-size: 2.5rem;
@@ -139,6 +154,115 @@ h2 {
 
 .card:hover {
     transform: scale(1.05);
+}
+/* Multicolumn Section */
+.info-columns {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.info-columns h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.column {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.column h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.column p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Table Section */
+.pricing-table {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.pricing-table table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.pricing-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.pricing-table td {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.pricing-table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.pricing-table tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+.pricing-table tr:hover td {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.pricing-table th, .pricing-table td {
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.pricing-table tr:last-child td {
+    border-bottom: none;
 }
 
 /* Testimonials Section */
@@ -208,6 +332,26 @@ h2 {
     font-size: 2rem;
     cursor: pointer;
     transition: color 0.3s;
+}
+
+/* Carousel Dots */
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
 }
 
 /* Contact Section */
